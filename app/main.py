@@ -2,15 +2,11 @@ import asyncio
 import pyodide_js
 import random
 
-async def main():
-    await pyodide_js.loadPackage('onnxruntime')
-    await pyodide_js.loadPackage('numpy')
+await pyodide_js.loadPackage('onnxruntime')
+await pyodide_js.loadPackage('numpy')
 
-    import onnxruntime
-    import numpy as np
-    
-
-asyncio.run(main())
+import onnxruntime
+import numpy as np
 
 SCENE_TITLE = 0
 SCENE_PLAY = 1
