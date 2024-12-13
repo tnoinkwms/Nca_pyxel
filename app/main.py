@@ -1,12 +1,9 @@
-import asyncio
-import pyodide_js
-import random
-
-pyodide_js.loadPackage('onnxruntime')
-pyodide_js.loadPackage('numpy')
-
+! pip install onnxruntime numpy
+! wget https://huggingface.co/rocca/openai-clip-js/resolve/main/clip-image-vit-32-float32.onnx
 import onnxruntime
 import numpy as np
+
+import pyxel
 
 SCENE_TITLE = 0
 SCENE_PLAY = 1
