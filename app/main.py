@@ -1,4 +1,10 @@
 import pyxel
+import micropip
+
+await micropip.install("numpy")
+await micropip.install("onnxruntime")
+await micropip.install("random")
+
 import numpy as np
 import onnxruntime
 import random
