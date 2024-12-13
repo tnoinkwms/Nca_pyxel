@@ -1,9 +1,9 @@
-import pyxel
 import micropip
+import pyxel
+
 
 await micropip.install("numpy")
 await micropip.install("onnxruntime")
-await micropip.install("random")
 
 import numpy as np
 import onnxruntime
