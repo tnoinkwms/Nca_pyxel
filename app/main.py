@@ -1,8 +1,12 @@
 import pyodide_js
 import pyxel
+import asyncio
 
-await pyodide_js.loadPackage("numpy")
-await pyodide_js.loadPackage("onnxruntime-web")
+async def setup():
+    await pyodide_js.loadPackage("numpy")
+    await pyodide_js.loadPackage("onnxruntime-web")
+
+asyncio.run(setup())
 
 import numpy as np
 import onnxruntime_web as onnxruntime
