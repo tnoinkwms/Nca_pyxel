@@ -1,9 +1,11 @@
-! pip install onnxruntime numpy
-! wget https://huggingface.co/rocca/openai-clip-js/resolve/main/clip-image-vit-32-float32.onnx
-import onnxruntime
-import numpy as np
-
+import micropip
 import pyxel
+
+micropip.install("onnxruntime-web")
+micropip.install("numpy")
+
+import onnxruntime_web as onnxruntime
+import numpy as np
 
 SCENE_TITLE = 0
 SCENE_PLAY = 1
