@@ -1,8 +1,8 @@
 import pyodide_js
 import pyxel
 
-pyodide_js.loadPackage("numpy")
-pyodide_js.loadPackage("onnxruntime-web")
+await pyodide_js.loadPackage("numpy")
+await pyodide_js.loadPackage("onnxruntime-web")
 
 import numpy as np
 import onnxruntime_web as onnxruntime
