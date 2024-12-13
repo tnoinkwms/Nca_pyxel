@@ -1,13 +1,16 @@
-import micropip
-import pyxel
-
-
-await micropip.install("numpy")
-await micropip.install("onnxruntime")
-
-import numpy as np
-import onnxruntime
+import asyncio
+import pyodide_js
 import random
+
+async def main():
+    # 'numpy'をロードした例
+    await pyodide_js.loadPackage('numpy')
+    await pyodide_js.loadPackage('onnxruntime')
+
+    import numpy as np
+    import onnxruntime
+
+asyncio.run(main())
 
 SCENE_TITLE = 0
 SCENE_PLAY = 1
