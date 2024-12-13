@@ -1,4 +1,12 @@
+import pyodide_js
 import asyncio
+
+async def setup():
+    await pyodide_js.loadPackage("micropip")
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(setup())
+
 import micropip
 
 async def setup():
