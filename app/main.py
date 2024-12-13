@@ -3,12 +3,12 @@ import pyodide_js
 import random
 
 async def main():
-    # 'numpy'をロードした例
-    await pyodide_js.loadPackage('numpy')
     await pyodide_js.loadPackage('onnxruntime')
+    await pyodide_js.loadPackage('numpy')
 
-    import numpy as np
     import onnxruntime
+    import numpy as np
+    
 
 asyncio.run(main())
 
