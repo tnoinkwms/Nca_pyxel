@@ -1,8 +1,8 @@
-import micropip
+import pyodide_js
 import pyxel
 
-micropip.install("onnxruntime-web")
-micropip.install("numpy")
+pyodide_js.loadPackage("onnxruntime-web")
+pyodide_js.loadPackage("numpy")
 
 import onnxruntime_web as onnxruntime
 import numpy as np
