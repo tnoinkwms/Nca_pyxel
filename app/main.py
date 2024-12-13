@@ -1,9 +1,9 @@
 import asyncio
-import pyodide_js
+import micropip
 
 async def setup():
-    await pyodide_js.loadPackage("numpy")
-    await pyodide_js.loadPackage("onnxruntime-web")
+    await micropip.install("numpy")
+    await micropip.installe("onnxruntime-web")
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(setup())
