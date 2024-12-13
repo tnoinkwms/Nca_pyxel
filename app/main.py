@@ -1,11 +1,12 @@
 import pyodide_js
 import pyxel
 
-pyodide_js.loadPackage("onnxruntime-web")
 pyodide_js.loadPackage("numpy")
+pyodide_js.loadPackage("onnxruntime-web")
 
-import onnxruntime_web as onnxruntime
 import numpy as np
+import onnxruntime_web as onnxruntime
+
 
 SCENE_TITLE = 0
 SCENE_PLAY = 1
