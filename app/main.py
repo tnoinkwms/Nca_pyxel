@@ -2,8 +2,8 @@ import asyncio
 import pyodide_js
 import random
 
-await pyodide_js.loadPackage('onnxruntime')
-await pyodide_js.loadPackage('numpy')
+pyodide_js.loadPackage('onnxruntime')
+pyodide_js.loadPackage('numpy')
 
 import onnxruntime
 import numpy as np
