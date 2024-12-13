@@ -1,15 +1,16 @@
-import pyodide_js
-import pyxel
 import asyncio
+import pyodide_js
 
 async def setup():
     await pyodide_js.loadPackage("numpy")
     await pyodide_js.loadPackage("onnxruntime-web")
 
-asyncio.run(setup())
+loop = asyncio.get_event_loop()
+loop.run_until_complete(setup())
 
 import numpy as np
 import onnxruntime_web as onnxruntime
+import pyxel
 
 
 SCENE_TITLE = 0
